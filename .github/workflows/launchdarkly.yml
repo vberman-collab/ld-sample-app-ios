@@ -1,0 +1,20 @@
+name: LaunchDarkly Code References
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  launchDarklyCodeReferences:
+    name: LaunchDarkly Code References
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: LaunchDarkly Code References
+        uses: launchdarkly/ld-find-code-refs@v2
+        with:
+          accessToken: ${{ secrets.LD_ACCESS_TOKEN }}
+          projKey: vberman-ld-demo
