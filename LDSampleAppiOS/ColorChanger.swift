@@ -27,10 +27,12 @@ class ColorChanger {
         self.client.observe(keys: flagKeys, owner: self) { changedFlags in
             changedFlags.keys.forEach { flagKey in
                 guard case .bool(let booleanValue) = changedFlags[flagKey]?.newValue else { return }
-                if booleanValue {
-                    self.makeGreen(flagKey: flagKey)
-                } else {
-                    self.makeRed(flagKey: flagKey)
+                DispatchQueue.main.async {
+                    if booleanValue {
+                        self.makeGreen(flagKey: flagKey)
+                    } else {
+                        self.makeRed(flagKey: flagKey)
+                    }
                 }
             }
         }

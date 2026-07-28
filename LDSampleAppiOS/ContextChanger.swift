@@ -24,10 +24,10 @@ class ContextChanger {
         var contextDeviceBuilder = LDContextBuilder()
         contextDeviceBuilder.kind("device")
         contextDeviceBuilder.key("device-018e7bd4-ab96-782e-87b0-b1e32082b481")
-        contextUserBuilder.trySetValue("os", .string("macOS"))
-        contextUserBuilder.trySetValue("osVersion", .string("15.6"))
-        contextUserBuilder.trySetValue("model", .string("MacBook Pro"))
-        contextUserBuilder.trySetValue("manufacturer", .string("Apple"))
+        contextDeviceBuilder.trySetValue("os", .string("macOS"))
+        contextDeviceBuilder.trySetValue("osVersion", .string("15.6"))
+        contextDeviceBuilder.trySetValue("model", .string("MacBook Pro"))
+        contextDeviceBuilder.trySetValue("manufacturer", .string("Apple"))
         
         var contextBuilder = LDMultiContextBuilder()
         var context: LDContext
@@ -65,10 +65,10 @@ class ContextChanger {
         var contextDeviceBuilder = LDContextBuilder()
         contextDeviceBuilder.kind("device")
         contextDeviceBuilder.key("device-e6ad2161-c300-4667-aeb3-e44173d6505a")
-        contextUserBuilder.trySetValue("os", .string("iOS"))
-        contextUserBuilder.trySetValue("osVersion", .string("16"))
-        contextUserBuilder.trySetValue("model", .string("iPhone"))
-        contextUserBuilder.trySetValue("manufacturer", .string("Apple"))
+        contextDeviceBuilder.trySetValue("os", .string("iOS"))
+        contextDeviceBuilder.trySetValue("osVersion", .string("16"))
+        contextDeviceBuilder.trySetValue("model", .string("iPhone"))
+        contextDeviceBuilder.trySetValue("manufacturer", .string("Apple"))
         
         var contextBuilder = LDMultiContextBuilder()
         var context: LDContext
@@ -106,10 +106,10 @@ class ContextChanger {
         var contextDeviceBuilder = LDContextBuilder()
         contextDeviceBuilder.kind("device")
         contextDeviceBuilder.key("device-7cd24fc6-7758-4d73-8c14-52c09f2de044")
-        contextUserBuilder.trySetValue("os", .string("macOS"))
-        contextUserBuilder.trySetValue("osVersion", .string("15.6"))
-        contextUserBuilder.trySetValue("model", .string("MacBook Pro"))
-        contextUserBuilder.trySetValue("manufacturer", .string("Apple"))
+        contextDeviceBuilder.trySetValue("os", .string("macOS"))
+        contextDeviceBuilder.trySetValue("osVersion", .string("15.6"))
+        contextDeviceBuilder.trySetValue("model", .string("MacBook Pro"))
+        contextDeviceBuilder.trySetValue("manufacturer", .string("Apple"))
         
         var contextBuilder = LDMultiContextBuilder()
         var context: LDContext
